@@ -1,0 +1,45 @@
+.contact-wraper {
+  margin: 5rem 0;
+}
+
+.contact-wraper h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 1rem;
+  /* identical to box height, or 122% */
+
+  letter-spacing: -0.02em;
+
+  /* Gray/900 */
+
+  color: #101828;
+}
+
+.contact-wraper p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #475467;
+}
+
+.contact-form {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  margin: 2rem 0 14rem 0;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  margin-bottom: 1rem;
+}
