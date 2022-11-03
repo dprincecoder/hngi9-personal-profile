@@ -1,5 +1,6 @@
 import React from "react";
-import './input.css'
+import "./input.css";
+import ErrorMessage from "./ErrorMessage";
 const index = ({
   handleChange,
   type,
@@ -23,6 +24,7 @@ const index = ({
         onChange={handleChange}
         {...otherProps}
       />
+      {required && <ErrorMessage type={type} label={label} />}
     </div>
   );
 };

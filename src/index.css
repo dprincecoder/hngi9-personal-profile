@@ -51,3 +51,50 @@ html {
 .danger {
   color: var(--color-danger);
 }
+
+input[type="email"]:focus:invalid ~ .message-required {
+  display: block;
+  border-color: var(--color-danger);
+  /* background-color: var(--color-danger); */
+  color: var(--color-danger);
+}
+input[type="password"]:focus:invalid ~ .message-required {
+  display: block;
+
+  border-color: var(--color-danger);
+  /* background-color: var(--color-danger); */
+  color: var(--color-danger);
+}
+input[type="text"]:focus:invalid:required ~ .message-required {
+  display: block;
+
+  border-color: var(--color-danger);
+  /* background-color: var(--color-danger); */
+  color: var(--color-danger);
+}
+
+
+
+input[type="email"]:focus:invalid {
+  border-color: var(--color-danger);
+  /* background-color: var(--color-danger); */
+  color: var(--color-danger);
+}
+input[type="password"]:focus:invalid {
+  border-color: var(--color-danger);
+  /* background-color: var(--color-danger); */
+  color: var(--color-danger);
+}
+input[type="text"]:focus:invalid:required {
+  border-color: var(--color-danger);
+  /* background-color: var(--color-danger); */
+  color: var(--color-danger);
+}
+textarea:focus:invalid {
+  border-color: var(--color-danger);
+  /* background-color: var(--color-danger); */
+  color: var(--color-danger);
+}
+
+
+

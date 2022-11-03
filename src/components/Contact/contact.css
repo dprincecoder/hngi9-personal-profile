@@ -1,5 +1,6 @@
 .contact-wraper {
   margin: 5rem 0;
+  position: relative;
 }
 
 .contact-wraper h1 {
@@ -48,4 +49,13 @@
   .contact-form {
     margin: 2rem 0 0 0;
   }
+}
+
+.message-sent-alert {
+  display: none;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #e6f4ea;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
 }

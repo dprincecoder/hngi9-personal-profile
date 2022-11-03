@@ -47,6 +47,6 @@
   display: none;
 }
 
-.textarea:invalid ~ .message-required {
+.textarea:focus:invalid ~ .message-required {
   display: block;
 }

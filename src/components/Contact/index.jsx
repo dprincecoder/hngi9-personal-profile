@@ -2,24 +2,35 @@ import React from "react";
 import InputField from "../formElement/InputField";
 import Button from "../formElement/Button";
 import Checkbox from "../formElement/Checkbox";
+import Successfull from "../alertsMessages/Successfull";
 import Textarea from "../formElement/Textarea";
 import "./contact.css";
 
 const index = () => {
+  const [alertOpen, setAlertOpen] = React.useState(false);
   const handleCheckboxChange = (e) => {
     console.log(e);
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setAlertOpen(true);
+  };
   return (
     <div className="contact-wraper">
+      <div className={`${alertOpen ? "" : "hide-alert"}`}>
+        <Successfull close={() => setAlertOpen(false)} />
+      </div>
       <h1>Contact Me</h1>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
-      <form className="contact-form">
+      <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-row flex-column">
           <InputField
             type="text"
             id="first_name"
             label="First Name"
             name="first_name"
+            required
             classes="space-right"
             placeholder="Enter your first name"
           />
@@ -27,6 +38,7 @@ const index = () => {
             type="text"
             id="last_name"
             label="Last Name"
+            required
             name="last_name"
             placeholder="Enter your last name"
           />
@@ -35,6 +47,7 @@ const index = () => {
           type="email"
           id="email"
           label="Email"
+          required
           name="email"
           placeholder="yourname@email.com"
           classes="width-full"
@@ -43,7 +56,8 @@ const index = () => {
           id="message"
           label="Message"
           name="message"
-          classes="width-full" required
+          classes="width-full"
+          required
           placeholder="Send me a message and I'll reply you as soon as possible..."
         />
         <Checkbox
