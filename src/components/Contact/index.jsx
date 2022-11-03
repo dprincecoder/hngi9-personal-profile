@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import InputField from "../formElement/InputField";
 import Button from "../formElement/Button";
 import Checkbox from "../formElement/Checkbox";
@@ -7,13 +7,21 @@ import Textarea from "../formElement/Textarea";
 import "./contact.css";
 
 const index = () => {
-  const [alertOpen, setAlertOpen] = React.useState(false);
+  const [alertOpen, setAlertOpen] = useState(false);
+  const [first_name, setFirst_name] = useState("");
+  const [last_name, setLast_name] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const handleCheckboxChange = (e) => {
     console.log(e);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFirst_name("");
+    setLast_name("");
+    setEmail("");
+      setMessage("");
     setAlertOpen(true);
   };
   return (
@@ -33,6 +41,8 @@ const index = () => {
             required
             classes="space-right"
             placeholder="Enter your first name"
+            value={first_name}
+            handleChange={(e) => setFirst_name(e.target.value)}
           />
           <InputField
             type="text"
@@ -40,6 +50,8 @@ const index = () => {
             label="Last Name"
             required
             name="last_name"
+            value={last_name}
+            handleChange={(e) => setLast_name(e.target.value)}
             placeholder="Enter your last name"
           />
         </div>
@@ -48,6 +60,8 @@ const index = () => {
           id="email"
           label="Email"
           required
+          value={email}
+          handleChange={(e) => setEmail(e.target.value)}
           name="email"
           placeholder="yourname@email.com"
           classes="width-full"
@@ -56,6 +70,8 @@ const index = () => {
           id="message"
           label="Message"
           name="message"
+          value={message}
+          handleChange={(e) => setMessage(e.target.value)}
           classes="width-full"
           required
           placeholder="Send me a message and I'll reply you as soon as possible..."
