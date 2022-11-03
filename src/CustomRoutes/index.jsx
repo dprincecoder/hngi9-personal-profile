@@ -9,7 +9,7 @@ const index = ({ components }) => {
   return (
     <Routes>
       {components.map(({ component, path }, index) => {
-        return <Route key={index} path={path} element={component} />;
+        return <Route key={index} path={path} exact element={component} />;
       })}
     </Routes>
   );
