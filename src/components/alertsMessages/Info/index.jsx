@@ -1,6 +1,6 @@
 import React from 'react'
 
-const index = () => {
+const index = ({close}) => {
   return (
     <div className="content">
       <div class="alert alert-info alert-white rounded">
@@ -9,6 +9,7 @@ const index = () => {
           class="close"
           data-dismiss="alert"
           aria-hidden="true"
+          onClick={close}
         >
           ×
         </button>
