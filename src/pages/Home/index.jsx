@@ -1,40 +1,57 @@
-import React from 'react'
-import Header from '../../components/Header'
-import Button from '../../components/formElement/Button'
-import Socials from '../../components/Socials'
+import React from "react";
+import Header from "../../components/Header";
+import LinkTag from "../../components/LinkTag";
+import Socials from "../../components/Socials";
 
 const index = () => {
   return (
     <>
       <Header />
-      <Button id="twitter" link="https://twitter.com/dprincecoder">
+      <LinkTag
+        id="twitter"
+        redirect="_blank"
+        link="https://twitter.com/dprincecoder"
+      >
         Twitter Link
-      </Button>
-      <Button id="btn__zuri" link="https://training.zuri.team/">
+      </LinkTag>
+      <LinkTag
+        id="btn__zuri"
+        redirect="_blank"
+        link="https://training.zuri.team/"
+      >
         Zuri Team
-      </Button>
-      <Button id="books" link="http://books.zuri.team/">
+      </LinkTag>
+      <LinkTag id="books" redirect="_blank" link="http://books.zuri.team/">
         Zuri Books
-      </Button>
+      </LinkTag>
 
-      <Button
+      <LinkTag
         id="book__python"
+        redirect="_blank"
         link="https://books.zuri.team/python-for-beginers?ref_id=dprincecoder"
       >
         Python Books
-      </Button>
-      <Button id="pitch" link="https://background.zuri.team/">
+      </LinkTag>
+      <LinkTag
+        id="pitch"
+        redirect="_blank"
+        link="https://background.zuri.team/"
+      >
         Background Check for Coders
-      </Button>
-      <Button id="book__design" link="https://books.zuri.team/design-rules">
+      </LinkTag>
+      <LinkTag
+        id="book__design"
+        redirect="_blank"
+        link="https://books.zuri.team/design-rules"
+      >
         Design Books
-      </Button>
-      <Button id="contact" link="/contact">
+      </LinkTag>
+      <LinkTag id="contact" link="/contact">
         Contact Me
-      </Button>
+      </LinkTag>
       <Socials />
     </>
   );
-}
+};
 
-export default index
+export default index;

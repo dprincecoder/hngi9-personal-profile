@@ -1,10 +1,15 @@
 import React from "react";
 import "./btn.css";
-const index = ({ children, id, link, ...otherProps }) => {
+const index = ({ children, id, handleClick, classes, ...otherProps }) => {
   return (
-    <a href={link} id={id} target="_blank" className="btn" {...otherProps}>
+    <button
+      onClick={handleClick}
+      type={type}
+      id={id}
+      className={`btn ${classes}`}
+      {...otherProps}>
       {children}
-    </a>
+    </button>
   );
 };
 

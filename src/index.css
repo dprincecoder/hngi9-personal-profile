@@ -1,11 +1,20 @@
-.space-right{
-    margin-right: 1rem;
+:root {
+  --color-primary: #1570ef;
+  --color-secondary: #0f0;
+  --bg-dark: #101828;
+  --bg-light: #f8f9fa;
+  --text-dark: #475467;
+  --text-light: #fff;
 }
 
-html{
-    scroll-behavior: smooth;
+.space-right {
+  margin-right: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    width: 0.5rem;
+  width: 0.5rem;
 }
