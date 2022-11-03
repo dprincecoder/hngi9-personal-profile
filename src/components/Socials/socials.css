@@ -1,0 +1,13 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.slack,
+.github {
+  text-decoration: none;
+  margin-right: 2rem;
+}
+

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.container {
+  width: 1219px;
+  padding: 1rem;
+}
+
+/* responsive design for mobile */
+@media (max-width: 768px) {
+  .app {
+    padding: 0;
+  }
+  .container {
+    width: 400px !important;
+    padding: 0;
+  }
+}
+
+/* responsive design for ipad  */
+@media (max-width: 1024px) {
+  .container {
+    width: 750px;
+
+    padding: 1rem 2rem;
+  }
+}
