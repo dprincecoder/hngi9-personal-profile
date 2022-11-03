@@ -29,6 +29,9 @@ const index = () => {
       <Button id="book__design" link="https://books.zuri.team/design-rules">
         Design Books
       </Button>
+      <Button id="contact" link="/contact">
+        Contact Me
+      </Button>
       <Socials />
     </>
   );
