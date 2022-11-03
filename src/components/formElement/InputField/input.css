@@ -3,10 +3,6 @@
   margin: 1.5rem 0 1.5rem 0;
 }
 
-.input-full {
-  width: 100%;
-}
-
 .input-box input {
   width: 100%;
   outline: none;
@@ -27,3 +23,8 @@
   line-height: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  .input-box {
+    width: 100%;
+  }
+}

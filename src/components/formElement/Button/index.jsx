@@ -1,6 +1,6 @@
 import React from "react";
 import "./btn.css";
-const index = ({ children, id, handleClick, classes, ...otherProps }) => {
+const index = ({ children, type, id, handleClick, classes, ...otherProps }) => {
   return (
     <button
       onClick={handleClick}

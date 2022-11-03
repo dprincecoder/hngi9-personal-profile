@@ -2,8 +2,7 @@
   display: block;
   width: 100%;
   margin: 1.5rem auto;
-  padding: 24px 32px;
-  /* padding: 24px 32px; */
+  padding: 18px 32px;
   background: #eaecf0;
   font-size: 18px;
   line-height: 1;
@@ -11,18 +10,11 @@
   text-align: center;
   outline: none;
   border: 1px solid #eaecf0;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
   cursor: pointer;
-  text-decoration: none;
+  border: 1px solid #1570ef;
+
+  border-radius: 8px;
   color: #000;
-}
-
-.btn:hover {
-  background: #dfe1e6;
-  /* border-color: #dfe1e6; */
-}
-
-.bg-primary {
-  background: var(--primary-color);
-  color: #fff;
 }

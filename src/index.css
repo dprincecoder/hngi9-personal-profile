@@ -1,6 +1,7 @@
 :root {
   --color-primary: #1570ef;
   --color-secondary: #0f0;
+  --color-danger: #f83f23;
   --bg-dark: #101828;
   --bg-light: #f8f9fa;
   --text-dark: #475467;
@@ -15,6 +16,38 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  width: 0.5rem;
+.width-full {
+  width: 100%;
+}
+
+.disabled {
+  background-color: #475467;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.bg-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-hover:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-column {
+    flex-direction: column;
+  }
+}
+
+.danger {
+  color: var(--color-danger);
 }
