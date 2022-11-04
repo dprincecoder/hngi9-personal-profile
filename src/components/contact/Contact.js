@@ -16,6 +16,8 @@ const Contact = () => {
     console.log(e);
   };
 
+  const name = 'Prince Azubuike';
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setFirst_name("");
@@ -78,7 +80,7 @@ const Contact = () => {
         />
         <Checkbox
           id="subscribe"
-          label="You agree to providing your data to Prince Azubuike, who may contact you."
+          label={`You agree to providing your data to ${name}, who may contact you.`}
           name="subscribe"
           handleCheckboxChange={handleCheckboxChange}
         />
