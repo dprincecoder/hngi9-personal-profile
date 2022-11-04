@@ -2,7 +2,7 @@
   "name": "hng_personal_profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dprincecoder.github.io/hng-personal-profile/",
+  "homepage": "https://dprincecoder.github.io/hngi9-personal-profile/",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
