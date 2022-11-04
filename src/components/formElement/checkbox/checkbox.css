@@ -15,7 +15,7 @@ position: relative;
   margin-left: 0.6rem;
   color: #475467;
 }
-
+/*
 .checkbox-wrap input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
@@ -52,6 +52,7 @@ position:relative;
   border-color: #c0c0c0;
   background-color: #c0c0c0;
 }
+*/
 
 .checkbox-wrap input[type="checkbox"]:disabled + label {
   color: #c0c0c0;
