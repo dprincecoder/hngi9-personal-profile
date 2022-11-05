@@ -23,6 +23,7 @@ const Checkbox = ({
         name={name}
         type="checkbox"
         checked={isChecked}
+        className={`${isChecked ? "checkbox-active" : ""}`}
         onChange={handleCheckbox}
         {...otherProps}
       />
